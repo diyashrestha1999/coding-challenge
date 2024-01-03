@@ -4,7 +4,7 @@
 
     <p class="font-medium text-xl">Section subtitle</p>
 
-    <div class="flex justify-center w-screen mt-3">
+    <div class="hidden justify-center w-screen mt-3 lg:flex">
       <TabCard
         v-for="(item, index) in cardItems"
         v-model="activeTab"
@@ -14,7 +14,7 @@
       />
     </div>
 
-    <div class="mt-6 w-3/5">
+    <div class="mt-6 w-3/5 hidden lg:flex">
       <ProductCard :active-tab="activeTab" />
     </div>
   </div>
