@@ -1,15 +1,15 @@
 <template>
-  <div class="text-black flex flex-col justify-center items-center h-screen">
+  <div class="text-black flex flex-col justify-center items-center">
     <h1 class="text-3xl font-semibold">Section title</h1>
 
     <p class="font-medium text-xl">Section subtitle</p>
 
-    <div class="flex items-center justify-center w-screen mt-3">
+    <div class="flex justify-center w-screen mt-3">
       <TabCard
         v-for="(item, index) in cardItems"
         v-model="activeTab"
         :key="index"
-        class="mx-2 h-full"
+        class="mx-2"
         :item="item"
       />
     </div>
