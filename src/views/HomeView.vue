@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="text-black flex flex-col justify-center items-center h-screen bg-yellow-300"
-  >
+  <div class="text-black flex flex-col justify-center items-center h-screen">
     <h1 class="text-3xl font-semibold">Section title</h1>
 
     <p class="font-medium text-xl">Section subtitle</p>
@@ -15,15 +13,20 @@
         :item="item"
       />
     </div>
+
+    <div class="mt-6 w-3/5">
+      <ProductCard />
+    </div>
   </div>
 </template>
 
 <script>
 import TabCard from "@/components/TabCard.vue";
+import ProductCard from "@/components/ProductCard.vue";
 
 export default {
   name: "HomeView",
-  components: { TabCard },
+  components: { ProductCard, TabCard },
   data() {
     return {
       cardItems: [
