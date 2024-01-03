@@ -18,7 +18,11 @@
 
     <button
       @click="$emit('input', item.activeTab)"
-      class="inline-flex items-center px-6 py-4 text-sm font-medium text-center bg-gray-100 rounded-tr-32 hover:bg-gray-300"
+      class="inline-flex items-center px-6 py-4 text-sm font-medium text-center bg-gray-100 hover:bg-gray-300 rounded-tr-32 rounded-bl-xl"
+      :class="{
+        'bg-yellow-400 hover:bg-yellow-400 box-shadow':
+          value === item.activeTab,
+      }"
     >
       Discover
 
@@ -50,5 +54,11 @@ export default {
 <style scoped>
 .rounded-tr-32 {
   border-radius: 0px 32px 0px 0px;
+}
+.box-shadow {
+  box-shadow: #3c479d 5px 5px;
+}
+.rounded-bl-xl {
+  border-bottom-left-radius: 12px;
 }
 </style>
