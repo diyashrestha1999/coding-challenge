@@ -1,6 +1,10 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div>
+    <h1 class="bg-gray-100">{{ msg }}</h1>
+    <p class="text-2xl font-bold mb-4">Welcome to My Tailwind Vue Project</p>
+    <p class="text-gray-600 bg-red-500">
+      This is a Vue 2 project with Tailwind CSS.
+    </p>
     <p>
       For a guide and recipes on how to configure / customize this project,<br />
       check out the
