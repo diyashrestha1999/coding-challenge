@@ -1,6 +1,6 @@
 <template>
   <div class="bg-amber-200 w-full rounded-40 p-14">
-    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
       <div class="flex flex-col justify-between items-start">
         <div>
           <p class="text-4xl font-semibold">Product {{ activeTab }}</p>
@@ -13,7 +13,7 @@
 
         <button
           type="button"
-          class="border-black bg-orange-600 py-4 px-10 text-lg font-medium rounded-full border-2 hover:bg-orange-700"
+          class="border-black bg-orange-600 py-4 px-10 text-lg font-medium rounded-full border-2 hover:bg-orange-700 hidden lg:block"
           @click="isDiscoverProduct = true"
         >
           Discover product
@@ -73,6 +73,14 @@
           </div>
         </div>
       </div>
+
+      <button
+        type="button"
+        class="border-black bg-orange-600 py-4 px-10 text-lg font-medium rounded-full border-2 hover:bg-orange-700 lg:hidden block"
+        @click="isDiscoverProduct = true"
+      >
+        Discover product
+      </button>
     </div>
 
     <div

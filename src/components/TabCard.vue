@@ -1,6 +1,6 @@
 <template>
   <div
-    class="max-w-80 bg-white border border-gray-200 rounded-xl shadow min-h-60 justify-between flex flex-col items-start"
+    class="max-w-80 bg-white border border-gray-200 rounded-xl shadow justify-between flex flex-col items-start"
   >
     <div class="grid grid-cols-1 gap-8 sm:grid-cols-3 p-6">
       <div class="col-span-2">

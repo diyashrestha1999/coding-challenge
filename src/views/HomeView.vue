@@ -9,7 +9,7 @@
         v-for="(item, index) in cardItems"
         v-model="activeTab"
         :key="index"
-        class="mx-2"
+        class="mx-2 h-full"
         :item="item"
       />
     </div>
