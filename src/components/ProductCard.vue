@@ -3,7 +3,7 @@
     <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
       <div class="flex flex-col justify-between items-start">
         <div>
-          <p class="text-4xl font-semibold">Product title</p>
+          <p class="text-4xl font-semibold">Product {{ activeTab }}</p>
 
           <p class="text-xl mt-12">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
@@ -121,6 +121,12 @@
 <script>
 export default {
   name: "ProductCard",
+  props: {
+    activeTab: {
+      type: Number,
+      required: true,
+    },
+  },
   data() {
     return {
       isDiscoverProduct: false,

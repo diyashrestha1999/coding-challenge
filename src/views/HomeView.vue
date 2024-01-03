@@ -15,7 +15,7 @@
     </div>
 
     <div class="mt-6 w-3/5">
-      <ProductCard />
+      <ProductCard :active-tab="activeTab" />
     </div>
   </div>
 </template>
@@ -34,28 +34,28 @@ export default {
           title: "Card Title",
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           icon: require("@/assets/tab-card-assets/card1.svg"),
-          activeTab: 0,
+          activeTab: 1,
         },
         {
           title: "Card title that goes 2 lines",
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           icon: require("@/assets/tab-card-assets/card2.svg"),
-          activeTab: 1,
+          activeTab: 2,
         },
         {
           title: "Card title",
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           icon: require("@/assets/tab-card-assets/card3.svg"),
-          activeTab: 2,
+          activeTab: 3,
         },
         {
           title: "Card title that goes 2 lines",
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           icon: require("@/assets/tab-card-assets/card4.svg"),
-          activeTab: 3,
+          activeTab: 4,
         },
       ],
-      activeTab: 0,
+      activeTab: 1,
     };
   },
 };
