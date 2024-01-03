@@ -1,8 +1,8 @@
 <template>
   <div
-    class="overflow-y-auto overflow-x-hidden fixed top-1/3 right-0 left-1/3 z-50 justify-center items-center w-full max-h-full"
+    class="overflow-y-auto overflow-x-hidden fixed lg:top-1/3 top-40 right-0 lg:left-1/3 z-50 justify-center items-center"
   >
-    <div class="relative p-4 w-full max-w-2xl max-h-full">
+    <div class="relative p-4 w-full lg:max-w-2xl">
       <div class="relative bg-white rounded-lg shadow">
         <div
           class="flex items-center justify-between p-4 md:p-5 border-b rounded-t"

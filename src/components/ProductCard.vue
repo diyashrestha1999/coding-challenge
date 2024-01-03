@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-amber-200 w-full rounded-40 p-14">
+  <div class="bg-amber-200 w-full lg:rounded-40 p-14 xs:rounded-xl">
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
       <div class="flex flex-col justify-between items-start">
         <div>

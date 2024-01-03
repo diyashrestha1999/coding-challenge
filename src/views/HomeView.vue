@@ -1,5 +1,7 @@
 <template>
-  <div class="text-black flex flex-col justify-center items-center">
+  <div
+    class="text-black flex flex-col justify-center items-center bg-gray-50 overflow-x-scroll"
+  >
     <h1 class="text-3xl font-semibold">Section title</h1>
 
     <p class="font-medium text-xl">Section subtitle</p>
@@ -17,16 +19,27 @@
     <div class="mt-6 w-3/5 hidden lg:flex">
       <ProductCard :active-tab="activeTab" />
     </div>
+
+    <div class="block lg:hidden sm:w-3/5">
+      <SmallTabCard
+        v-for="(item, index) in cardItems"
+        v-model="activeTab"
+        :key="index"
+        class="mx-2"
+        :item="item"
+      />
+    </div>
   </div>
 </template>
 
 <script>
 import TabCard from "@/components/TabCard.vue";
 import ProductCard from "@/components/ProductCard.vue";
+import SmallTabCard from "@/components/SmallTabCard.vue";
 
 export default {
   name: "HomeView",
-  components: { ProductCard, TabCard },
+  components: { SmallTabCard, ProductCard, TabCard },
   data() {
     return {
       cardItems: [
