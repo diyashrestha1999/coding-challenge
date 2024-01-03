@@ -1,6 +1,6 @@
 <template>
   <div
-    class="text-black flex flex-col justify-center items-center bg-gray-50 overflow-x-scroll"
+    class="text-black flex flex-col justify-center items-center overflow-x-scroll bg-gray-50 lg:h-lvh xs:h-full"
   >
     <h1 class="text-3xl font-semibold">Section title</h1>
 
