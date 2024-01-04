@@ -5,10 +5,7 @@
         <div>
           <p class="text-4xl font-semibold">Product {{ activeTab }}</p>
 
-          <p class="text-xl mt-12">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            scelerisque risus id ante maximus blandit.
-          </p>
+          <p class="text-xl mt-12" v-html="contents[activeTab - 1].content" />
         </div>
 
         <button
@@ -141,6 +138,24 @@ export default {
             "Accordion title 5 : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque risus id ante maximus blandit.",
           isExpand: false,
           icon: require("@/assets/product-card-assets/product1.svg"),
+        },
+      ],
+      contents: [
+        {
+          content:
+            "<strong>PRODUCT 1 :</strong> This is product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque risus id ante maximus blandit. ",
+        },
+        {
+          content:
+            "<strong>PRODUCT 2 :</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque risus id ante maximus blandit. ",
+        },
+        {
+          content:
+            "<strong>PRODUCT 3 :</strong> This is product 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque risus id ante maximus blandit.",
+        },
+        {
+          content:
+            "<strong>PRODUCT 4 :</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque risus id ante maximus blandit. ",
         },
       ],
     };
